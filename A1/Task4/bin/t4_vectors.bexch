@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__t4_vectors.o
+[PROJECT FILES]
+C:\Users\Daniel\Desktop\A1\Task4\t4_vectors.gpr
+20231025172140 aae4cf5ef6912458268ea177ebe9b275
+[BOUND OBJECT FILES]
+C:\Users\Daniel\Desktop\A1\Task4\bin\vectors.o
+C:\Users\Daniel\Desktop\A1\Task4\bin\t4_vectors.o
+[GENERATED SOURCE FILES]
+b__t4_vectors.ads
+b__t4_vectors.adb
+b__t4_vectors.ali
+[RESULTING OPTIONS]
+-LC:\Users\Daniel\Desktop\A1\Task4\bin\
+-LC:\Users\Daniel\Desktop\A1\Task4\bin\
+-LC:/gnat/2021(1)/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021(1)/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-lm
+-Wl,--stack=0x2000000

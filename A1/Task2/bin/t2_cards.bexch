@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__t2_cards.o
+[PROJECT FILES]
+C:\Users\Daniel\Desktop\A1\Task2\t2_cards.gpr
+20231025172946 091fd1a62dda25813077188f400699e9
+[BOUND OBJECT FILES]
+C:\Users\Daniel\Desktop\A1\Task2\bin\t2_cards.o
+[GENERATED SOURCE FILES]
+b__t2_cards.ads
+b__t2_cards.adb
+b__t2_cards.ali
+[RESULTING OPTIONS]
+-LC:\Users\Daniel\Desktop\A1\Task2\bin\
+-LC:\Users\Daniel\Desktop\A1\Task2\bin\
+-LC:/gnat/2021(1)/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021(1)/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

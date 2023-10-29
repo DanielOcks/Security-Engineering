@@ -1,0 +1,130 @@
+V "GNAT Lib v2021"
+M P W=b
+A -gnatA
+A -g
+A -g
+A -gnato
+A -gnatwa
+A -gnatwe
+A -gnatQ
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U t4_vectors%b		t4_vectors.adb		d606e5e2 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_7%s	s-conca7.adb		s-conca7.ali
+Z system.img_flt%s	s-imgflt.ads		s-imgflt.ali
+W vectors%s		vectors.adb		vectors.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
+D s-conca7.ads		20210520051132 fcc75b1f system.concat_7%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-imager.ads		20210520051134 500b11a9 system.image_r%s
+D s-imageu.ads		20210520051134 525c30c6 system.image_u%s
+D s-imgflt.ads		20210520051134 78689de8 system.img_flt%s
+D s-imguns.ads		20210520051134 0e4da2ac system.img_uns%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-powflt.ads		20210520051134 46f7a1b9 system.powten_flt%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D t4_vectors.adb	20231025165514 02f1ac63 t4_vectors%b
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+D vectors.ads		20231022105156 7a039cec vectors%s
+G a e
+G c Z b b [t4_vectors standard 4 11 none]
+G r c none [t4_vectors standard 4 11 none] [Oadd vectors 8 13 none]
+G r c none [t4_vectors standard 4 11 none] [Osubtract vectors 10 14 none]
+G r c none [t4_vectors standard 4 11 none] [Omultiply vectors 12 13 none]
+G r c none [t4_vectors standard 4 11 none] [Omultiply vectors 14 13 none]
+G r c none [t4_vectors standard 4 11 none] [Oeq vectors 16 13 none]
+G r c none [t4_vectors standard 4 11 none] [are_orthogonal vectors 19 14 none]
+G r c none [t4_vectors standard 4 11 none] [cross_product vectors 21 13 none]
+G r c none [t4_vectors standard 4 11 none] [distance vectors 23 13 none]
+G r c none [t4_vectors standard 4 11 none] [distance_to_origin vectors 25 13 none]
+G r c none [t4_vectors standard 4 11 none] [put vectors 27 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 35|1r6 45r4 46r13 47r4 48r13 49r4 50r13 50r35 51r4 52r4 53r4
+. 54r4 55r4 56r4 57r4 58r4 59r4 60r4 61r4 62r4 63r4
+X 9 a-textio.ads
+58K13*Text_IO 725e16 35|1w10 45r8 46r17 47r8 48r17 49r8 50r17 50r39 51r8
+. 52r8 53r8 54r8 55r8 56r8 57r8 58r8 59r8 60r8 61r8 62r8 63r8
+262U14*New_Line 35|46s25 48s25 50s25 50s47
+463U14*Put 35|45s16 47s16 49s16
+506U14*Put_Line 35|51s16 52s16 53s16 54s16 55s16 56s16 57s16 58s16 59s16
+. 60s16 61s16 62s16 63s16
+X 35 t4_vectors.adb
+4U11*t4_vectors 4b11 65l5 65t15
+5r4 V1{37|2R10} 9m4 10m4 11m4 27r10 28r10 29r10 31r14 32r13 34r24 35r23 36r33
+. 40r13 41r28 42r11 43r11 46r8
+5r8 V2{37|2R10} 13m4 14m4 15m4 27r15 28r15 31r19 32r18 34r27 35r27 48r8
+5r12 V3{37|2R10} 27m4 51r53 51r80 51r107
+5r16 V4{37|2R10} 28m4 52r53 52r80 52r107
+5r20 V5{37|2R10} 29m4 53r54 53r81 53r108
+5r24 V6{37|2R10} 17m4 18m4 19m4 33r28
+5r28 V7{37|2R10} 21m4 22m4 23m4 33r32 41r32
+5r32 V8{37|2R10} 34m4 61r58 61r85 61r112
+5r36 V9{37|2R10} 37m4 38m4 39m4 40r18 50r8
+5r40 V10{37|2R10} 42m4 54r52 54r80 54r108
+5r45 V11{37|2R10} 43m4 55r53 55r81 55r109
+6f4 Value1{float} 25m4 29r15
+6f12 Value2{float} 31m4 56r51
+6f20 Value3{float} 35m4 62r52
+6f28 Value4{float} 36m4 63r62
+7b4 bool1{boolean} 32m4 57r52
+7b11 bool2{boolean} 33m4 59r55
+7b18 bool3{boolean} 40m4 58r52
+7b25 bool4{boolean} 41m4 60r55
+X 37 vectors.ads
+1K9*Vectors 35|2w6 2r19 5r50 37|29e12
+2R10*Vector 35|5r58 37|6e14
+3f9*X{float} 35|9m7 13m7 17m7 21m7 37m7 51r56 52r56 53r57 54r56 55r57 61r61
+4f9*Y{float} 35|10m7 14m7 18m7 22m7 38m7 51r83 52r83 53r84 54r84 55r85 61r88
+5f9*Z{float} 35|11m7 15m7 19m7 23m7 39m7 51r110 52r110 53r111 54r112 55r113
+. 61r115
+8V14*"+"{2R10} 35|27s13
+10V15*"-"{2R10} 35|28s13
+12V14*"*"{2R10} 35|29s13 42s14 43s14
+14V14*"*"{float} 35|31s17
+16V14*"="{boolean} 35|32s16 40s16
+19V14*Are_Orthogonal{boolean} 35|33s13 41s13
+21V13*Cross_Product{2R10} 35|34s10
+23V13*Distance{float} 35|35s14
+25V13*Distance_To_Origin{float} 35|36s14
+27U14*Put 35|46s4 48s4 50s4
+
