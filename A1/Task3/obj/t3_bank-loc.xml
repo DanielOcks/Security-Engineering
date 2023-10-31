@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>\\wsl.localhost\Debian\home\ali\se\Security-Engineering\A1\Task3\t3_bank.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>\\wsl.localhost\Debian\home\ali\se\T3_Bank\src\bank_accounts.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 16" >
+      <vfs_project>\\wsl.localhost\Debian\home\ali\se\Security-Engineering\A1\Task3\t3_bank.gpr</vfs_project>
+      <vfs_file>\\wsl.localhost\Debian\home\ali\se\Security-Engineering\A1\Task3\src\t3_bank.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 32" >
+      <vfs_project>\\wsl.localhost\Debian\home\ali\se\Security-Engineering\A1\Task3\t3_bank.gpr</vfs_project>
+      <vfs_file>\\wsl.localhost\Debian\home\ali\se\Security-Engineering\A1\Task3\src\bank_accounts.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 19" line=" 17" >
+      <vfs_project>\\wsl.localhost\Debian\home\ali\se\Security-Engineering\A1\Task3\t3_bank.gpr</vfs_project>
+      <vfs_file>\\wsl.localhost\Debian\home\ali\se\Security-Engineering\A1\Task3\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
