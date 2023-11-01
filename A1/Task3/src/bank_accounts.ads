@@ -22,4 +22,3 @@ package Bank_Accounts is
     -- Transfers Amount from Account From to Account To.
 end Bank_Accounts;
 
--- for some reason the pre and post conditions did not fulfill the purpose here

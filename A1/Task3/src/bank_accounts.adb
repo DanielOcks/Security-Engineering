@@ -6,30 +6,18 @@ package body Bank_Accounts is
    
    procedure Deposit(Account: in out Account_Type; Amount: Cents_Type) is 
    begin
-      if Amount <= 0 then
-         raise Constraint_Error with "The amount can not be negative or eqaul to 0!";
-      else 
-         Account.Balance := Account.Balance + Amount;
-      end if;
+      Account.Balance := Account.Balance + Amount;
    end Deposit;
    
    procedure Withdraw(Account: in out Account_Type; Amount: Cents_Type) is
    begin
-      if Amount <= 0 then
-         raise Constraint_Error with "The amount can not be negative or eqaul to 0!";
-      else 
-         Account.Balance := Account.Balance - Amount;
-      end if;
+      Account.Balance := Account.Balance - Amount;
    end Withdraw;
    
    procedure Transfer(From: in out Account_Type; 
                        To: in out Account_Type; 
                       Amount: in Cents_Type) is
    begin
-      if Amount <= 0 then
-         raise Constraint_Error with "The amount can not be negative or eqaul to 0!";
-      end if;
-  
       if Amount <= From.Balance then
          Withdraw(From, Amount);
          Deposit(To, Amount);
