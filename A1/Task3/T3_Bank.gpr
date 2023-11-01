@@ -6,7 +6,7 @@ project T3_Bank is
    package Compiler is
       for Default_Switches ("ada") use ("-g", "-gnato",
                                         "-gnatwa", "-gnatwe",
-                                        "-gnatQ", "-gnat12");
+                                        "-gnatQ", "-gnat12", "-gnata");
    end Compiler;
 
    package Builder is

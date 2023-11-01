@@ -1,6 +1,0 @@
-t3_bank.adb:5:38: error: positional aggregate cannot have one component
-t3_bank.adb:5:38: error: write instead "Balance => ..."
-t3_bank.adb:9:27: error: ";" should be ","
-t3_bank.adb:10:28: error: ";" should be ","
-t3_bank.adb:11:36: error: ";" should be ","
-t3_bank.adb:11:47: error: positional parameters not allowed after named ones
