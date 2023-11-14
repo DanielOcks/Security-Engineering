@@ -1,0 +1,21 @@
+-- following liskov example from AUnit
+-- unchanged files include AdaCore copyright
+with "aunit";
+
+project T6_Bank is
+    for Source_Dirs use ("src", "tests");
+    for Object_Dir use "bin";
+    for Main use ("test_bank_accounts.adb");
+
+    package Compiler is
+        for Default_Switches ("ada") use ("-g", "-gnato",
+                                          "-gnatwa", 
+                                       -- "-gnatwe",
+                                          "-gnatQ", "-gnat12", 
+                                          "-gnata");
+    end Compiler;
+
+    package Builder is
+        for Default_Switches ("ada") use ("-g");
+    end Builder;
+end T6_Bank;
