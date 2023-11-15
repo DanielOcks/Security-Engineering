@@ -7,7 +7,7 @@ package body Thread is
    
    procedure Do_Action(S: in out State; A: Action) is 
    begin 
-      case S is 
+      case S is
          when Ready =>
             case A is 
                when Start =>
@@ -45,6 +45,9 @@ package body Thread is
                when others =>
                   S := None;
             end case;
+            
+          when Stopped =>
+             S := None;
             
          when others =>
             raise Invalid_State_Exc;
