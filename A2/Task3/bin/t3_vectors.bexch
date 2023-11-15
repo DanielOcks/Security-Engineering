@@ -1,0 +1,24 @@
+[GENERATED OBJECT FILE]
+b__t3_vectors.o
+[PROJECT FILES]
+C:\Users\Daniel\Desktop\Security-Engineering-main\A2\Task3\t3_vectors.gpr
+20231115100206 cf93edb83f00d12e2551e228eb064bc1
+C:\gnat\2021(1)\share\gpr\aunit.gpr
+20210520133456 ac8b85e020f125c7f7761c4b22f85ce8
+[BOUND OBJECT FILES]
+C:\Users\Daniel\Desktop\Security-Engineering-main\A2\Task3\bin\vectors.o
+C:\Users\Daniel\Desktop\Security-Engineering-main\A2\Task3\bin\t3_vectors.o
+[GENERATED SOURCE FILES]
+b__t3_vectors.ads
+b__t3_vectors.adb
+b__t3_vectors.ali
+[RESULTING OPTIONS]
+-LC:\Users\Daniel\Desktop\Security-Engineering-main\A2\Task3\bin\
+-LC:\Users\Daniel\Desktop\Security-Engineering-main\A2\Task3\bin\
+-LC:\gnat\2021(1)\lib\aunit\
+-LC:/gnat/2021(1)/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021(1)/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-lm
+-Wl,--stack=0x2000000

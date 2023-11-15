@@ -1,3 +1,5 @@
+with "aunit";
+
 project T3_vectors is
    for Main use ("t3_vectors.adb");
    for Source_Dirs use ("src");

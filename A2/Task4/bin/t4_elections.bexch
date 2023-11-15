@@ -1,0 +1,23 @@
+[GENERATED OBJECT FILE]
+b__t4_elections.o
+[PROJECT FILES]
+C:\Users\Daniel\Desktop\Security-Engineering-main\A2\Task4\t4_elections.gpr
+20231115100306 3ebfa278738f7bf2bbb932a835680131
+C:\gnat\2021(1)\share\gpr\aunit.gpr
+20210520133456 ac8b85e020f125c7f7761c4b22f85ce8
+[BOUND OBJECT FILES]
+C:\Users\Daniel\Desktop\Security-Engineering-main\A2\Task4\bin\elections.o
+C:\Users\Daniel\Desktop\Security-Engineering-main\A2\Task4\bin\t4_elections.o
+[GENERATED SOURCE FILES]
+b__t4_elections.ads
+b__t4_elections.adb
+b__t4_elections.ali
+[RESULTING OPTIONS]
+-LC:\Users\Daniel\Desktop\Security-Engineering-main\A2\Task4\bin\
+-LC:\Users\Daniel\Desktop\Security-Engineering-main\A2\Task4\bin\
+-LC:\gnat\2021(1)\lib\aunit\
+-LC:/gnat/2021(1)/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021(1)/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

@@ -1,0 +1,131 @@
+V "GNAT Lib v2021"
+M P W=b
+A -gnatA
+A -g
+A -g
+A -gnato
+A -gnatwa
+A -gnatwe
+A -gnatQ
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U t3_vectors%b		t3_vectors.adb		30dc2718 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W aunit%s		aunit.adb		aunit.ali
+W aunit.assertions%s	aunit-assertions.adb	aunit-assertions.ali
+W vectors%s		vectors.adb		vectors.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-calend.ads		20210520051128 474d9720 ada.calendar%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-finali.ads		20210520051128 bf4f806b ada.finalization%s
+D a-inteio.ads		20210520051128 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D ada_containers.ads	20210519052522 11329e00 ada_containers%s
+D ada_containers-aunit_lists.ads  20210519052522 d9ebc89a ada_containers.aunit_lists%s
+D aunit.ads		20210519052522 76cdf7c6 aunit%s
+D aunit-assertions.ads	20210519052522 b7f9ecd6 aunit.assertions%s
+D aunit-io.ads		20210519052522 fb5ed18b aunit.io%s
+D aunit-test_results.ads  20210519052522 b44de7dc aunit.test_results%s
+D aunit-tests.ads	20210519052522 1da11d49 aunit.tests%s
+D aunit-time_measure.ads  20210519052522 d9c247b0 aunit.time_measure%s
+D gnat.ads		20210520051132 b5988c27 gnat%s
+D g-souinf.ads		20210520051132 291df751 gnat.source_info%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-finmas.ads		20210520051132 1ab4dba8 system.finalization_masters%s
+D s-finroo.ads		20210520051132 4ff27390 system.finalization_root%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-pooglo.ads		20210520051134 ede33ef8 system.pool_global%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20210520051134 e9fa2dd8 system.storage_pools%s
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D t3_vectors.adb	20231115095850 53d2824f t3_vectors%b
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+D vectors.ads		20231115095850 7a039cec vectors%s
+G a e
+G c Z b b [t3_vectors standard 5 11 none]
+G r c none [t3_vectors standard 5 11 none] [Oadd vectors 8 13 none]
+G r c none [t3_vectors standard 5 11 none] [Oeq vectors 16 13 none]
+G r c none [t3_vectors standard 5 11 none] [assert aunit__assertions 48 14 none]
+G r c none [t3_vectors standard 5 11 none] [Osubtract vectors 10 14 none]
+G r c none [t3_vectors standard 5 11 none] [Omultiply vectors 12 13 none]
+G r c none [t3_vectors standard 5 11 none] [Omultiply vectors 14 13 none]
+G r c none [t3_vectors standard 5 11 none] [are_orthogonal vectors 19 13 none]
+G r c none [t3_vectors standard 5 11 none] [cross_product vectors 21 13 none]
+G r c none [t3_vectors standard 5 11 none] [distance vectors 23 13 none]
+G r c none [t3_vectors standard 5 11 none] [distance_to_origin vectors 25 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 46|1r6 1r23
+X 12 a-textio.ads
+58K13*Text_IO 725e16 46|1w10 1r27
+506U14*Put_Line 46|13s22 22s22 31s22 40s22 48s22 56s22 65s22 73s22 81s22
+. 95s7
+X 17 aunit.ads
+34K9*AUnit 48e10 46|2r6 9r7 10r7 11r7 18r7 19r7 20r7 27r7 28r7 29r7 36r7
+. 37r7 38r7 45r7 46r7 53r7 54r7 61r7 62r7 63r7 70r7 71r7 78r7 79r7
+X 18 aunit-assertions.ads
+44K15*Assertions 155e21 46|2w12 9r13 10r13 11r13 18r13 19r13 20r13 27r13
+. 28r13 29r13 36r13 37r13 38r13 45r13 46r13 53r13 54r13 61r13 62r13 63r13
+. 70r13 71r13 78r13 79r13
+48U14*Assert 46|9s24 10s24 11s24 18s24 19s24 20s24 27s24 28s24 29s24 36s24
+. 37s24 38s24 45s24 46s24 53s24 54s24 61s24 62s24 63s24 70s24 71s24 78s24
+. 79s24
+X 46 t3_vectors.adb
+5U11*t3_vectors 5b11 97l5 97t15
+6i4 Fails{integer} 13m56 13r65 22m59 22r68 31m62 31r71 40m62 40r71 48m53
+. 48r62 56m62 56r71 65m61 65r70 73m56 73r65 81m66 81r75 94r7
+7U14 Test_Addition 7b14 14l8 14t21 85s4
+16U14 Test_Subtraction 16b14 23l8 23t24 86s4
+25U14 Test_Multiplication 25b14 32l8 32t27 87s4
+34U14 Test_Scalar_Product 34b14 41l8 41t27 88s4
+43U14 Test_Equal 43b14 49l8 49t18 89s4
+51U14 Test_Are_Orthogonal 51b14 57l8 57t27 90s4
+59U14 Test_Cross_Product 59b14 66l8 66t26 91s4
+68U14 Test_Distance 68b14 74l8 74t21 92s4
+76U14 Test_Distance_To_Origin 76b14 82l8 82t31 93s4
+X 48 vectors.ads
+1K9*Vectors 46|3w6 3r19 45r31 46r31 48|29e12
+8V14*"+"{2R9} 46|9s47 10s47 11s47
+10V15*"-"{2R9} 46|18s47 19s47 20s47
+12V14*"*"{2R9} 46|27s47 28s47 29s47
+14V14*"*"{float} 46|36s47 37s47 38s47
+16V14*"="{boolean} 46|9s65 10s68 11s65 18s65 19s68 20s65 27s53 28s53 29s56
+. 45s40 46s40 61s79 62s82 63s79
+19V13*Are_Orthogonal{boolean} 46|53s31 54s31
+21V13*Cross_Product{2R9} 46|61s31 62s31 63s31
+23V13*Distance{float} 46|70s31 71s31
+25V13*Distance_To_Origin{float} 46|78s31 79s31
+
