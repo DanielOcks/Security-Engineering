@@ -47,11 +47,9 @@ package body Thread is
             end case;
             
          when others =>
-            raise Thread_Error;
+            raise Invalid_State_Exc;
       end case;
       
    end Do_Action;
-   
-  
 
 end Thread;

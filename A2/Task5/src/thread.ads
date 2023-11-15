@@ -1,10 +1,12 @@
 package Thread is
     type State is (None, Ready, Running, Stopped, Sleeping, Waiting);
     type Action is (Notify, Resume, Sleep, Start, Stop, Wait);
-    Thread_Error: exception;
+    Invalid_State_Exc: exception;
    
    procedure Initialize(S: out State)
-     with Post => S = Ready;
+     with Pre => S /= None or S /= Ready or S /= Running or 
+          S /= Stopped or S /= Sleeping or S /= Waiting,
+       Post => S = Ready;
     -- Sets S to Ready.
    procedure Do_Action(S: in out State; A: Action)
      with Pre => (S /= None) or
@@ -22,9 +24,3 @@ package Thread is
     -- Updates the state S according to the given input state S, and the 
     -- given action A. Sets S to None if the transition is not defined.
 end Thread;
--- 
--- Questions:
--- If the transition is not defined we set S to None. but then what? do we raise an error?
--- can we initialize the state S again or is it a dead state? 
--- and also if we cannot initialize a none state then we cannot define a pre condition 
--- for procedure Initialize() like this: Pre => S not in State'Range

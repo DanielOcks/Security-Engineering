@@ -1,102 +1,77 @@
-with Ada.Text_IO;
-with Ada.Assertions;
-with Thread;
-
+with Ada.Text_IO; use Ada.Text_IO;
+with Thread; use Thread;
+with AUnit.Assertions;
+--with Ada.Assertions;
 
 procedure T5_Threads is
-   S: Thread.State;
-   A: Thread.Action;
+
+   procedure Test_Initialize_Exc is
+      S : State;
+   begin
+      Initialize(S);
+      Do_Action(S, Start);
+      Initialize(S);
+   end Test_Initialize_Exc;
+
+   procedure Test_Initialization is
+      S : State;
+   begin
+      Initialize(S);
+      AUnit.Assertions.Assert (S = Ready, "Thread not initialized to Ready state.");
+      AUnit.Assertions.Assert_Exception(Test_Initialize_Exc'Access, "Initialize should throw an assertion error");
+
+   end Test_Initialization;
+
+   procedure Test_Start_Stop_Transition is
+      S : State;
+   begin
+      Initialize(S);
+      Do_Action(S, Start);
+      AUnit.Assertions.Assert (S = Running, "Incorrect state after Start action.");
+
+      Do_Action(S, Stop);
+      AUnit.Assertions.Assert (S = Stopped, "Incorrect state after Stop action.");
+   end Test_Start_Stop_Transition;
+
+   procedure Test_Wait_Notify_Transition is
+      S : State;
+   begin
+      Initialize(S);
+      Do_Action(S, Start);
+      Do_Action(S, Wait);
+      AUnit.Assertions.Assert (S = Waiting, "Incorrect state after Wait action.");
+
+      Do_Action(S, Notify);
+      AUnit.Assertions.Assert (S = Running, "Incorrect state after Notify action.");
+   end Test_Wait_Notify_Transition;
+
+   procedure Test_Sleep_Resume_Transition is
+      S : State;
+   begin
+      Initialize(S);
+      Do_Action(S, Start);
+      Do_Action(S, Sleep);
+      AUnit.Assertions.Assert (S =Sleeping, "Incorrect state after Sleep action.");
+
+      Do_Action(S, Resume);
+      AUnit.Assertions.Assert (S = Running, "Incorrect state after Resume action.");
+   end Test_Sleep_Resume_Transition;
+
+   procedure Test_Undefined_Transition is
+      S : State;
+   begin
+      Initialize(S);
+      Do_Action(S, Sleep);
+      AUnit.Assertions.Assert (S = None, "Incorrect state after invalid Sleep action.");
+
+   end Test_Undefined_Transition;
 
 begin
-   -- Test Initialize procedure
-   Thread.Initialize(S);
-   Ada.Text_IO.Put_Line("Initialized state: " & Thread.State'Image(S));
-
-   -- Test Do_Action procedure for each state and action
-   -- Test for Ready state
-   A := Thread.Start;
-   begin
-      Thread.Do_Action(S, A);
-   exception
-         when ADA.ASSERTIONS.ASSERTION_ERROR =>
-         Ada.Text_IO.Put_Line(Thread.Action'Image(A) & " is invalid action to the current state " & Thread.State'Image(S));
-   end;
-
-   Ada.Text_IO.Put_Line("State after Start action: " & Thread.State'Image(S));
-
-   -- Test for Running state
-   A := Thread.Wait;
-   begin
-      Thread.Do_Action(S, A);
-   exception
-         when ADA.ASSERTIONS.ASSERTION_ERROR =>
-         Ada.Text_IO.Put_Line(Thread.Action'Image(A) & " is invalid action to the current state " & Thread.State'Image(S));
-   end;
-
-   Ada.Text_IO.Put_Line("State after Wait action: " & Thread.State'Image(S));
-
-   -- Test for invalid actions
-   A := Thread.Sleep;
-   begin
-      Thread.Do_Action(S, A);
-   exception
-         when ADA.ASSERTIONS.ASSERTION_ERROR =>
-         Ada.Text_IO.Put_Line(Thread.Action'Image(A) & " is invalid action to the current state " & Thread.State'Image(S));
-   end;
-
-   Ada.Text_IO.Put_Line("State after Sleep action: " & Thread.State'Image(S));
-
-   A := Thread.Stop;
-   begin
-      Thread.Do_Action(S, A);
-   exception
-         when ADA.ASSERTIONS.ASSERTION_ERROR =>
-         Ada.Text_IO.Put_Line(Thread.Action'Image(A) & " is invalid action to the current state " & Thread.State'Image(S));
-   end;
-
-   Ada.Text_IO.Put_Line("State after Stop action: " & Thread.State'Image(S));
-
-   -- Test for Waiting state
-   A := Thread.Notify;
-   begin
-      Thread.Do_Action(S, A);
-   exception
-         when ADA.ASSERTIONS.ASSERTION_ERROR =>
-         Ada.Text_IO.Put_Line(Thread.Action'Image(A) & " is invalid action to the current state " & Thread.State'Image(S));
-   end;
-
-   Ada.Text_IO.Put_Line("State after Notify action: " & Thread.State'Image(S));
-
-   -- Test for Sleeping state
-   A := Thread.Sleep;
-   begin
-      Thread.Do_Action(S, A);
-   exception
-         when ADA.ASSERTIONS.ASSERTION_ERROR =>
-         Ada.Text_IO.Put_Line(Thread.Action'Image(A) & " is invalid action to the current state " & Thread.State'Image(S));
-   end;
-
-   Ada.Text_IO.Put_Line("State after Sleep action: " & Thread.State'Image(S));
-
-   -- Test Resume action
-   A := Thread.Resume;
-   begin
-      Thread.Do_Action(S, A);
-   exception
-         when ADA.ASSERTIONS.ASSERTION_ERROR =>
-         Ada.Text_IO.Put_Line(Thread.Action'Image(A) & " is invalid action to the current state " & Thread.State'Image(S));
-   end;
-
-   Ada.Text_IO.Put_Line("State after Resume action: " & Thread.State'Image(S));
-
-   -- Test Stop action
-   A := Thread.Stop;
-   begin
-      Thread.Do_Action(S, A);
-   exception
-         when ADA.ASSERTIONS.ASSERTION_ERROR =>
-         Ada.Text_IO.Put_Line(Thread.Action'Image(A) & " is invalid action to the current state " & Thread.State'Image(S));
-   end;
-   Ada.Text_IO.Put_Line("State after Stop action: " & Thread.State'Image(S));
-
+   Test_Initialize_Exc;
+   Test_Initialization;
+   Test_Start_Stop_Transition;
+   Test_Wait_Notify_Transition;
+   Test_Sleep_Resume_Transition;
+   Test_Undefined_Transition;
+   Put_Line("everything ok");
 end T5_Threads;
