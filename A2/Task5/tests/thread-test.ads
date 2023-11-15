@@ -1,13 +1,11 @@
---
---  Copyright (C) 2008, AdaCore
---
+
 with AUnit;
 with AUnit.Test_Fixtures;
 
 package Thread.Test is
 
    type Test is new AUnit.Test_Fixtures.Test_Fixture with record
-      S : State;
+      S : State := None;
    end record;
 
    procedure Test_Initialize_Exc;

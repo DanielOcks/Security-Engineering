@@ -1,3 +1,6 @@
+-- the following is based on test_fixture example from AUnit
+-- unchanged files include AdaCore copyright
+
 with "aunit";
 
 project T5_Threads is

@@ -1,6 +1,4 @@
---
---  Copyright (C) 2008, AdaCore
---
+
 with Thread.Test;         use Thread.Test;
 with AUnit.Test_Caller;
 

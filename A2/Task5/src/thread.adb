@@ -49,8 +49,8 @@ package body Thread is
           when Stopped =>
              S := None;
             
-         when others =>
-            raise Invalid_State_Exc;
+          when others =>
+             raise Invalid_State_Exc;
       end case;
       
    end Do_Action;

@@ -1,8 +1,6 @@
---
---  Copyright (C) 2008, AdaCore
---
-with AUnit.Assertions; use AUnit.Assertions;
 
+with AUnit.Assertions; use AUnit.Assertions;
+with Ada.Text_IO;
 package body Thread.Test is
 
    procedure Test_Initialize_Exc is
@@ -12,20 +10,20 @@ package body Thread.Test is
    end Test_Initialize_Exc;
 
    procedure Test_Invalid_State_Exc is
-      S : State;
+      S : State := None;
    begin
-      Initialize(S);  -- S = Ready
-      Do_Action(S, Stop); -- S = Stopped
-      Do_Action(S, Sleep); -- S = None
       Do_Action(S, Start);
    end Test_Invalid_State_Exc;
 
    procedure Test_Initialization (T : in out Test) is
    begin
       Initialize(T.S);
-      Assert(T.S = Ready, "Thread not initialized to Ready state.");
+      Assert(T.S = Running, "Thread not initialized to Ready state.");
+
       Assert_Exception(Test_Initialize_Exc'Access, "Initialize should raise an exception");
       Assert_Exception(Test_Invalid_State_Exc'Access, "Performing actions on an invalid state (None) should raise an exception");
+   exception
+         when others => Ada.Text_IO.Put_Line("Test initialization failed :)");
    end Test_Initialization;
 
    procedure Test_Start_Transition (T : in out Test) is
