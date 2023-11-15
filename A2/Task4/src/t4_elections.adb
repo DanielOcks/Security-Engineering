@@ -102,7 +102,7 @@ procedure t4_elections is
    Test_All_Voters_Voted;
    Find_Winner;
    if Fails = 0 then
-      Put_Line("ALL TEST WERE SUCCESSFUL");
+      Put_Line("ALL TESTS WERE SUCCESSFUL");
    end if;
 
 end t4_elections;

@@ -1,0 +1,134 @@
+V "GNAT Lib v2021"
+M P W=b
+A -gnatA
+A -g
+A -g
+A -gnato
+A -gnatwa
+A -gnatwe
+A -gnatQ
+A -gnat12
+A -gnata
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U t4_elections%b	t4_elections.adb	8bfd9ae2 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W aunit%s		aunit.adb		aunit.ali
+W aunit.assertions%s	aunit-assertions.adb	aunit-assertions.ali
+W elections%s		elections.adb		elections.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-calend.ads		20210520051128 474d9720 ada.calendar%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-finali.ads		20210520051128 bf4f806b ada.finalization%s
+D a-inteio.ads		20210520051128 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D ada_containers.ads	20210519052522 11329e00 ada_containers%s
+D ada_containers-aunit_lists.ads  20210519052522 d9ebc89a ada_containers.aunit_lists%s
+D aunit.ads		20210519052522 76cdf7c6 aunit%s
+D aunit-assertions.ads	20210519052522 b7f9ecd6 aunit.assertions%s
+D aunit-io.ads		20210519052522 fb5ed18b aunit.io%s
+D aunit-test_results.ads  20210519052522 b44de7dc aunit.test_results%s
+D aunit-tests.ads	20210519052522 1da11d49 aunit.tests%s
+D aunit-time_measure.ads  20210519052522 d9c247b0 aunit.time_measure%s
+D elections.ads		20231115095852 a5ae0255 elections%s
+D gnat.ads		20210520051132 b5988c27 gnat%s
+D g-souinf.ads		20210520051132 291df751 gnat.source_info%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-finmas.ads		20210520051132 1ab4dba8 system.finalization_masters%s
+D s-finroo.ads		20210520051132 4ff27390 system.finalization_root%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-pooglo.ads		20210520051134 ede33ef8 system.pool_global%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20210520051134 e9fa2dd8 system.storage_pools%s
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D t4_elections.adb	20231115095852 375ea10c t4_elections%b
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z b b [t4_elections standard 5 11 none]
+G r c none [t4_elections standard 5 11 none] [initialize elections 12 14 none]
+G r c none [t4_elections standard 5 11 none] [assert aunit__assertions 48 14 none]
+G r c none [t4_elections standard 5 11 none] [vote_for elections 17 14 none]
+G r c none [t4_elections standard 5 11 none] [all_voters_voted elections 22 13 none]
+G r c none [t4_elections standard 5 11 none] [find_winner elections 27 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 47|1r6 1r23
+X 12 a-textio.ads
+58K13*Text_IO 725e16 47|1w10 1r27
+506U14*Put_Line 47|33s22 57s22 81s22 96s22 105s7
+X 17 aunit.ads
+34K9*AUnit 48e10 47|2r6 15r7 16r7 17r7 18r7 19r7 20r7 21r7 24r7 25r7 26r7
+. 27r7 28r7 29r7 30r7 43r7 44r7 45r7 46r7 47r7 50r7 51r7 52r7 53r7 54r7 68r7
+. 73r7 78r7 89r7 93r7
+X 18 aunit-assertions.ads
+44K15*Assertions 155e21 47|2w12 15r13 16r13 17r13 18r13 19r13 20r13 21r13
+. 24r13 25r13 26r13 27r13 28r13 29r13 30r13 43r13 44r13 45r13 46r13 47r13
+. 50r13 51r13 52r13 53r13 54r13 68r13 73r13 78r13 89r13 93r13
+48U14*Assert 47|15s24 16s24 17s24 18s24 19s24 20s24 21s24 24s24 25s24 26s24
+. 27s24 28s24 29s24 30s24 43s24 44s24 45s24 46s24 47s24 50s24 51s24 52s24
+. 53s24 54s24 68s24 73s24 78s24 89s24 93s24
+X 23 elections.ads
+1K9*Elections 34e14 47|3w6 3r21 65r7 66r7 70r7 71r7 75r7 76r7
+2E9*Party 2e36 47|37r12 38r12 85r16
+2n19*None{2E9} 47|17r50 26r50 43r50 50r50 87r68 93r40
+2n25*A{2E9} 47|18r50 27r50 40r16 44r50 51r50 87r16 91r16
+2n28*B{2E9} 47|19r50 28r50 41r16 45r50 52r50 87r29 87r84 89r40
+2n31*C{2E9} 47|20r50 29r50 46r50 53r50 87r42
+2n34*D{2E9} 47|21r50 30r50 47r50 54r50 87r55
+3A9*Votes_Array(natural)<2E9>
+6a4*Votes_Distribution{3A9} 47|17r31 18r31 19r31 20r31 21r31 26r31 27r31
+. 28r31 29r31 30r31 43r31 44r31 45r31 46r31 47r31 50r31 51r31 52r31 53r31
+. 54r31
+7i4*Num_Votes_Made{natural} 47|16r31 25r31 65m17 70m17 75m17
+8i4*Num_Total_Voters{natural} 47|15r31 24r31 66m17 71m17 76m17
+12U14*Initialize 47|14s7 23s7
+17U14*Vote_For 47|42s7 49s7 87s7 87s20 87s33 87s46 87s59 87s75 91s7
+22V13*All_Voters_Voted{boolean} 47|67s16 72s16 77s16
+27V13*Find_Winner{2E9} 47|88s17 92s17
+X 47 t4_elections.adb
+5U11*t4_elections 5b11 108l5 108t17
+6i4 Fails{integer} 33m58 33r67 57m56 57r65 81m64 81r73 96m59 96r68 104r7
+7U14 Test_Initialize 7b14 34l8 34t23 100s4
+8i7 Num_Voters1{natural} 11m7 14r18
+9i7 Num_Voters2{natural} 12m7 23r18
+36U14 Test_Vote_For 36b14 58l8 58t21 101s4
+37e4 Vote1{23|2E9} 40m7 42r16
+38e4 Vote2{23|2E9} 41m7 49r16
+60U14 Test_All_Voters_Voted 60b14 82l8 82t29 102s4
+61b7 bool1{boolean} 67m7 68r31
+62b7 bool2{boolean} 72m7 73r31
+63b7 bool3{boolean} 77m7 78r31
+84U14 Find_Winner 84b14 97l8 97t19 103s4
+85e7 Winner{23|2E9} 88m7 89r31 92m7 93r31
+
