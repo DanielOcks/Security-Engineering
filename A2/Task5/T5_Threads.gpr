@@ -1,0 +1,22 @@
+-- the following is based on test_fixture example from AUnit
+-- unchanged files include AdaCore copyright
+
+with "aunit";
+
+project T5_Threads is
+
+   for Source_Dirs use ("src", "tests");
+   for Object_Dir use "bin";
+   for Main use ("t5_thread.adb");
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-g", "-gnato", "-gnatwa",
+                                     --  "-gnatwe",
+                                        "-gnatQ", "-gnat12", "-gnata");
+   end Compiler;
+
+   package Builder is
+      for Default_Switches ("ada") use ("-g");
+   end Builder;
+
+end T5_Threads;
