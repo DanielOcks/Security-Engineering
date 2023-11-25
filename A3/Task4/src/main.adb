@@ -1,0 +1,15 @@
+project Task4 is
+    for Source_Dirs use ("src");
+    for Object_Dir use "bin";
+    for Main use ("main.adb");
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-g", "-gnato",
+                                        "-gnatwa", "-gnatwe",
+                                        "-gnatQ", "-gnat12", "-gnata");
+   end Compiler;
+
+   package Builder is
+      for Default_Switches ("ada") use ("-g");
+   end Builder;
+end Task4;

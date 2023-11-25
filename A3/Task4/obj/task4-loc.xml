@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>C:\Users\Daniel\Desktop\Studium\5. Semester\Security Engineering\A3\Task4\task4.gpr</vfs_file>
+    <file_marker column=" 1" line=" 30" >
+      <vfs_project />
+      <vfs_file>C:\GNAT\2021\bin\src\math.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 3" >
+      <vfs_project />
+      <vfs_file>C:\GNAT\2021\bin\task4.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\GNAT\2021\bin\task4.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 3" >
+      <vfs_project />
+      <vfs_file>C:\GNAT\2021\bin\task4.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Daniel\Desktop\Studium\5. Semester\Security Engineering\A3\Task4\task4.gpr</vfs_project>
+      <vfs_file>C:\Users\Daniel\Desktop\Studium\5. Semester\Security Engineering\A3\Task4\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Daniel\Desktop\Studium\5. Semester\Security Engineering\A3\Task4\task4.gpr</vfs_project>
+      <vfs_file>C:\Users\Daniel\Desktop\Studium\5. Semester\Security Engineering\A3\Task4\task4.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Daniel\Desktop\Studium\5. Semester\Security Engineering\A3\Task4\task4.gpr</vfs_project>
+      <vfs_file>C:\Users\Daniel\Desktop\Studium\5. Semester\Security Engineering\A3\Task4\src\math.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Daniel\Desktop\Studium\5. Semester\Security Engineering\A3\Task4\task4.gpr</vfs_project>
+      <vfs_file>C:\Users\Daniel\Desktop\Studium\5. Semester\Security Engineering\A3\Task4\src\math.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Daniel\Desktop\Studium\5. Semester\Security Engineering\A3\Task4\task4.gpr</vfs_project>
+      <vfs_file>C:\Users\Daniel\Desktop\Studium\5. Semester\Security Engineering\A3\Task4\src\main.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
