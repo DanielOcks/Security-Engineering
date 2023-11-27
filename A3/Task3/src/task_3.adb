@@ -1,4 +1,15 @@
 package body Task_3 is
+   
+   function Factorial(N: Natural) return Natural is
+   Result: Natural := 1;
+   begin
+      for I in 1 .. N loop
+         Result := Result * I;
+      end loop;
+      return Result;
+   end Factorial;
+   
+
 
    function F(N: Natural) return Natural is
     I: Natural := 0;
