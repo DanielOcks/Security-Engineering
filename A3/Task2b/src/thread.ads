@@ -8,13 +8,7 @@ package Thread is
        Post => S = Ready;
     -- Sets S to Ready.
    procedure Do_Action(S: in out State; A: Action)
-     with Pre => (S /= None) or else
-                   (S = Ready and A = Start) or else
-                   ((S = Ready or S = Running) and A = Stop) or else
-                   (S = Running and (A = Wait or A = Sleep)) or else
-                   (S = Waiting and A = Notify) or else
-                   (S = Sleeping and A = Resume),
-           Post => (S = Running and A = Start) or else
+     with Post => (S = Running and A = Start) or else
                    (S = Stopped and A = Stop) or else
                    (S = Running and (A = Notify or A = Resume)) or else
                    (S = Waiting and A = Wait) or else

@@ -49,7 +49,7 @@ package body Thread is
           when Stopped =>
              S := None;
             
-          when others =>
+          when None =>
              raise Invalid_State_Exc;
       end case;
       
