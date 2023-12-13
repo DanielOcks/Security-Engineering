@@ -1,0 +1,20 @@
+-- following Test_Fixture example from AUnit
+with "aunit";
+
+project T4_MurmurHash2 is
+    for Source_Dirs use ("src", "tests");
+    for Object_Dir use "bin";
+    for Main use ("test_murmur.adb");
+
+    package Compiler is
+        for Default_Switches ("ada") use ("-g", "-gnato",
+                                          "-gnatwa", 
+                                          "-gnatwe",
+                                          "-gnatQ", "-gnat12", 
+                                          "-gnata");
+    end Compiler;
+
+    package Builder is
+        for Default_Switches ("ada") use ("-g");
+    end Builder;
+end T4_MurmurHash2;
