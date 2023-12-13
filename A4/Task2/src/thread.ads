@@ -3,16 +3,15 @@ package Thread is
    type Action is (Notify, Resume, Sleep, Start, Stop, Wait);
    Invalid_State_Exc: exception;
    
-   -- We could not define global and depends here because there are no 
-   -- global variable 
-   -- with a pre condition for Initialize that should be S = None, the project 
-   -- does not compile 
+   
    procedure Initialize(S: out State)
-     with
+     with Global => null,
+       Depends => (S => null),
        Post => S = Ready;
     -- Sets S to Ready.
    procedure Do_Action(S: in out State; A: Action)
-     with
+     with Global => null,
+       Depends => (S => (S, A)),
        Pre => S /= None,
        Post => (S = Running and A = Start) or else
                    (S = Stopped and A = Stop) or else

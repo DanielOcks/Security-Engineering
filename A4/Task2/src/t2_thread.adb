@@ -23,6 +23,7 @@ begin
       Thread.Do_Action(S, Thread.Sleep);
       Ada.Text_IO.Put_Line("State after Sleep action: " & Thread.State'Image(S));
    end if;
+   -- Undefined transation test
    if S /= None then
       Thread.Do_Action(S, Thread.Stop);
       Ada.Text_IO.Put_Line("State after Wait action: " & Thread.State'Image(S));
