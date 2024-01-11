@@ -1,9 +1,8 @@
---with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 with Ada.Text_IO;
 with Sorting;
 
 procedure T2_Selection_Sort is
-   A: Sorting.Natural_Array := (5, 2, 4, 1, 3);
+   A: Sorting.Natural_Array := (0, 5, 2, 4, 1, 3, 8, 7);
 
 begin
    Ada.Text_IO.Put_Line("Unsorted A: " );
