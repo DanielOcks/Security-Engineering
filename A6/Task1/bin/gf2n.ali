@@ -1,0 +1,45 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -g
+A -g
+A -gnato
+A -gnatwa
+A -gnatwe
+A -gnatQ
+A -gnat12
+A -gnata
+A -mtune=generic
+A -march=x86-64
+P CE NO ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U gf2n%b		gf2n.adb		c79b677f OO PK GE IU
+
+U gf2n%s		gf2n.ads		1ca5b5e0 BN EE OO PK GE IU
+
+D gf2n.ads		20240123130746 1ca5b5e0 gf2n%s
+D gf2n.adb		20240123130746 db3ed29f gf2n%b
+G a e
+G c Z s b [gf2n standard 8 9 none]
+X 1 gf2n.ads
+4M10 Element_Type 7r8 9r21 9r38 9r59 10r21 10r38 10r59 15r21 15r38 15r59
+. 2|3r20 3r37 3r58 8r20 8r37 8r58 23r20 23r37 23r58 24r11 25r11 26r11
+7*5 P{4M10}
+8k9*GF2n 4z10 7z5 17l5 17e9 2|2b14 37l5 37t9
+9V15*"+"{4M10} 9>18 9>35 2|3b14 6l9 6t11
+9*18 X{4M10} 2|3b17 5r14
+9*35 Y{4M10} 2|3b34 5r20
+10V15*"-"{4M10} 10>18 10>35 2|8b14 11l9 11t11
+10*18 X{4M10} 2|8b17 10r14
+10*35 Y{4M10} 2|8b34 10r20
+15V14*GCD{4M10} 15>18 15>35 2|23b13 35l8 35t11
+15*18 X{4M10} 2|23b17 24r27
+15*35 Y{4M10} 2|23b34 25r27
+X 2 gf2n.adb
+24*7 A{1|4M10} 29r15 30m10 34r14
+25*7 B{1|4M10} 28r13 30r15 31m10 31r21
+26*7 C{1|4M10} 29m10 31r15
+
