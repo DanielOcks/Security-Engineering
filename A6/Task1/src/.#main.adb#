@@ -4,12 +4,13 @@ with GF2n;
 procedure Main is
    type GF_2_4_Type is mod 2**4;
 
-   package GF is new GF2n(Element_Type => GF_2_4_Type, P => 2**8);
+   package GF is new GF2n(Element_Type => GF_2_4_Type, P => );
    X, Y, GCD_Result: GF_2_4_Type;
 
 begin
-   X := 5 ;
-   Y := 9;
+   -- we do not know how the polynomials should be represented here
+   -- X := ;
+   -- Y := ;
 
    Ada.Text_IO.Put_Line("Galois Field Operations Example:");
 
